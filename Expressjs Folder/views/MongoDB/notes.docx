@@ -1,0 +1,23 @@
+Mongo db is a nosql database it has no structure.
+It is stored in collection but collection does not have row and columns.
+Data is storde in the form of object.
+Data stored in object form required less memory.
+
+To create a new database  :
+    1. Use Database_name(Youtube);
+    2. To access we have to create collection/table db.createCollection('videos')
+    3.To see database show dbs
+
+To see collection:  show collections
+
+collections are group of documents stored in database.
+
+
+To delete database : db.dropDatabase()
+
+Created a database  named E-comm and collection named products
+Commands :
+    1.use E-comm
+    2.db.products.insertOne({name:"Apple",price:100})
+    3 To see data db.products.find()
+    4 To update db.products.updateOne({name:"Apple"},{$set{price:300}})The collection where name is "Apple" price will update to 300
