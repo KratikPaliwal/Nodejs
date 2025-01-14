@@ -21,3 +21,7 @@ Commands :
     2.db.products.insertOne({name:"Apple",price:100})
     3 To see data db.products.find()
     4 To update db.products.updateOne({name:"Apple"},{$set{price:300}})The collection where name is "Apple" price will update to 300
+
+
+
+Whenever we have to handle promise we use then
