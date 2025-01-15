@@ -3,8 +3,11 @@ const insert = async ()=>{
     const data = await getData();
     const result = await data.insertMany([
         {name:'S22', Brands: 'Samsung', price:70000, category: 'Mobile'},
-        {name:'S24', Brands: 'Samsung', price:610000, category: 'Mobile'}
+        {name:'S24', Brands: 'Samsung', price:610000, category: 'Mobile'},
+        {name:'S25', Brands: 'Samsung', price:710000, category: 'Mobile'},
+
     
     ]);
 }
 insert();
+// to insert data to the database
