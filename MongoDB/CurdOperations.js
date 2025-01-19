@@ -49,4 +49,4 @@ const deleteData = async ()=>{
     let result = await data.deleteOne({name: 'Apple'});
     console.warn(result);
 }
-deleteData();
+
