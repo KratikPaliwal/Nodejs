@@ -2,6 +2,8 @@ const express = require('express');
 const mongoconnection = require('../MongoDB/mongodb');
 const app = express();
 
+const mongodb = require('mongodb');
+
 // Used to get body form request
 app.use(express.json());
 
@@ -30,6 +32,15 @@ app.put('/', async(req, resp)=>{
         {$set : req.body}
     );
     resp.send({result: "Update"});
+
+    
+
+})
+
+app.delete('/:id', async(req, resp)=>{
+    let data = await mongoconnection();
+    let result  = await data.deleteOne({_id: new mongodb.ObjectId(req.params.id)});
+    resp.send(result);
 
     
 
