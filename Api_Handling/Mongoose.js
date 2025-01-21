@@ -2,6 +2,8 @@
 
 // Model connect mongodb with nodejs 
 
+//Schema define the sturvture of the document. It act as blueprint how the data should be store and validate
+
 
 // To save data in db
 const  mongoose = require('mongoose');
